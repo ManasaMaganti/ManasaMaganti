@@ -21,4 +21,4 @@
 [![ManasaMaganti](https://github-readme-stats.vercel.app/api/top-langs/?username=ManasaMaganti&layout=compact)](https://www.github.com/ManasaMaganti)
 
 ![Follows](https://img.shields.io/github/followers/ManasaMaganti?style=social)
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ManasaMaganti/)](https://www.linkedin.com/in/ManasaMaganti/)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/manasa-maganti/)](https://www.linkedin.com/in/manasa-maganti/)
