@@ -8,16 +8,19 @@
 
 <div id="user-content-toc">
   <ul align="center">
-    <summary><h2 style="display: inline-block">Technologies I Know👩‍💻</h2></summary>
+    <summary><h3 style="display: inline-block">Technologies I Know👩‍💻</h3></summary>
   </ul>
 </div>
 <!--tech stack icons-->
-<p align="center">
+<p align="left">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=r,mysql,py,pytorch,tensorflow,github,aws,gcp,vscode,photoshop,matlab,anaconda,&perline=14" />
   </a>
 </p>
 
-
+ ![Manasa's github stats](https://github-readme-stats.vercel.app/api?username=ManasaMaganti&show_icons=true&theme=radical)
 
 [![ManasaMaganti](https://github-readme-stats.vercel.app/api/top-langs/?username=ManasaMaganti&layout=compact)](https://www.github.com/ManasaMaganti)
+
+![Follows](https://img.shields.io/github/followers/ManasaMaganti?style=social)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ManasaMaganti/)](https://www.linkedin.com/in/ManasaMaganti/)
