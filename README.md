@@ -7,7 +7,7 @@
 
 
 <div id="user-content-toc">
-  <ul align="center">
+  <ul align="left">
     <summary><h3 style="display: inline-block">Technologies I Know👩‍💻</h3></summary>
   </ul>
 </div>
@@ -17,8 +17,6 @@
     <img src="https://skillicons.dev/icons?i=r,mysql,py,pytorch,tensorflow,github,aws,gcp,vscode,photoshop,matlab,anaconda,&perline=14" />
   </a>
 </p>
-
- ![Manasa's github stats](https://github-readme-stats.vercel.app/api?username=ManasaMaganti&show_icons=true&theme=radical)
 
 [![ManasaMaganti](https://github-readme-stats.vercel.app/api/top-langs/?username=ManasaMaganti&layout=compact)](https://www.github.com/ManasaMaganti)
 
