@@ -14,7 +14,7 @@
 <!--tech stack icons-->
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=r,mysql,py,pytorch,tensorflow,github,aws,gcp,vscode,photoshop,matlab,anaconda,&perline=14" />
+    <img src="https://skillicons.dev/icons?i=r,mysql,py,pytorch,tensorflow,github,anaconda,&perline=14" />
   </a>
 </p>
 
