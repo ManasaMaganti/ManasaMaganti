@@ -2,7 +2,7 @@
 
 - 🔭 I’m currently pursuing my Masters in Business Analytics from University of Texas at Austin
 - 🚀 Worked with Fortune 500 clients to provide Data Science consulting solutions in Marketing domain across BFSI and Travel industries 
-- 🌱 Dedicated mentor, lifelong learner, and advocate for turning insights into impactful actions
+- 🌱 Lifelong learner, dedicated mentor and an advocate for turning insights into impactful actions
 - 📫 You can reach out to me on my mail-id: manasamaganti16@gmail.com
 
 
