@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manasa's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .right-curve {
+            width: 500px;
+            height: 100px;
+            border: solid 5px #000;
+            border-color: #000 transparent transparent transparent;
+            border-radius: 50%/100px 100px 0 0;
+        }
+
+        canvas {
+            display: block;
+            background: rgb(33, 36, 50);
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="relative h-[100vh]  rounded-br-[54px] rounded-bl-[54px]">
+        <div id="tsparticles" class="absolute w-full h-full -z-10">
+
+        </div>
+        <div class="p-12 z-10 h-[14vh]">
+            <div class="flex justify-end gap-2 mr-8">
+                <div class="relative group">
+                    <a href="#background" class="font-roboto">
+                    <button class="text-base py-1 px-2 bg-white rounded">
+                        BACKGROUND</button></a>
+                    <p
+                        class="hidden absolute mb-auto group-hover:block group-hover:animate-expand border-b-2 border-headings">
+                    </p>
+
+                </div>
+                <div class="relative group">
+                    <a href="#testimonials" class="font-roboto">
+                    <button class="text-base py-1 px-2 bg-white rounded">
+                        TESTIMONIALS </button></a>
+                    <p
+                        class="hidden absolute mb-auto group-hover:block group-hover:animate-expand border-b-2 border-headings">
+                    </p>
+
+                </div>
+                <div class="relative group">
+                    <a href="#projects" class="font-roboto"><button class="text-base py-1 px-2 bg-white rounded">
+                        PROJECTS</button></a>
+                    <p
+                        class="hidden absolute mb-auto group-hover:block group-hover:animate-expand border-b-2 border-headings">
+                    </p>
+                </div>
+                <div class="relative group">
+                    <a href="#publications" class="font-roboto"><button class="text-base font-roboto  py-1 px-2 bg-white rounded">
+                        PUBLICATIONS</button></a>
+                    <p
+                        class="hidden absolute mb-auto group-hover:block group-hover:animate-expand border-b-2 border-headings">
+                    </p>
+
+                </div>
+                <div class="relative group">
+                    <a href="#contact" class="font-roboto"><button class="text-base font-roboto  py-1 px-2 bg-white rounded">
+                        CONTACT</button></a>
+                    <p
+                        class="hidden absolute mb-auto group-hover:block group-hover:animate-expand border-b-2 border-headings">
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="h-[calc(86vh-6rem)] mt-24 flex justify-center">
+            <div class="relative flex flex-col items-center mb-2">
+                <div class="relative w-[12em] h-[12em] mb-4">
+                    <img src="./assets/profile.jpeg" style="transform: scale(1.12);"
+                        class="rounded-[100px] p-1 bg-white border-2 border-slate-100" alt="Profile Photo">
+                    <div
+                        class="drop-shadow-sm animate-bounce top-6 right-[-4.5rem]  absolute flex items-center rounded-[200px] px-6 h-10 bg-white border border-gray-100">
+                        <p class="text-black">Hello 👋</p>
+                    </div>
+                </div>
+                <h1 class="font-robotoslab text-4xl bg-white text-headings">
+                    Manasa Maganti
+                </h1>
+                <p class="bg-white mt-4 text-xl font-lisubosa text-center font-extralight text-gray-600 max-w-[40%]">
+                    I'm a data storyteller who finds the “why” behind the numbers and turns it into
+                    actionable insights</p>
+                <p class="bg-white mt-12 text-xl font-lisubosa text-center font-extralight text-gray-600 italic">
+                    Welcome to my corner of the web!</p>
+                <div class="flex self-center mt-4  gap-x-4">
+                    <a href="https://www.github.com/ManasaMaganti" target="_blank">
+                        <img class="h-[36px] w-[36px]" src="./assets/github.svg" alt="Github">
+                    </a>
+                    <a href="mailto:manasamaganti16@gmail.com" target="_blank">
+                        <img class="h-[36px] w-[36px]" src="./assets/mail.svg" alt="Mail">
+                    </a>
+                    <a href="https://www.linkedin.com/in/" target="_blank">
+                        <img class="h-[36px] w-[36px]" src="./assets/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="bg-white">
+                    <a href="https://drive.google.com/file/d/1HGmehwPuCxe3Qo0Gsk1qGVHsQzCq_IJG/view?usp=drive_link">
+                        <button
+                            class="border border-[#e9b943] rounded-full px-4 py-2 text-lg text-[#e9b943] mt-8 hover:text-white hover:bg-[#e9b943] transition-colors">
+                            VIEW RESUME
+                        </button>
+                    </a>
+                </div>
+                <div class="mt-auto mb-4 self-center">
+                    <!-- <a href="#background"><img src="./assets/down_arrow.svg" class="text-gray-300" alt="Down Arrow"></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <section class="flex flex-col p-8 items-center" id="background">
+        <div class="container flex flex-col items-center">
+            <div class="flex flex-col items-center ">
+                <p class="font-robotoslab text-[2rem] text-headings">Background</p>
+                <p class="border-b border-b-gray-400 w-24 mt-2"></p>
+                <p class="mt-6 text-xl font-lisubosa font-extralight text-center text-gray-800 max-w-[40%]">
+                    With 4+ years of experience,
+                    <br>I've teamed up with Fortune <span class="font-serif text-lg">500</span> stakeholders to solve
+                    strategic
+                    challenges at the crossroads of Math, Tech, and Business. <br>Whether it's fine-tuning machine
+                    learning
+                    models to perfection, mastering Excel like a keyboard ninja, or pitching ideas that win over even
+                    the toughest stakeholders—I get things done.
+                    <br><br> Right now, I'm pursuing my Master's in Business Analytics at the University of Texas at
+                    Austin,
+                    gearing up to graduate in May <span class="font-serif text-lg">2025</span>.
+                </p>
+            </div>
+            <div class="flex mt-20 gap-2 w-full">
+                <div class="flex flex-col flex-1 items-end">
+                    <div class="h-[18.25rem]"> </div>
+                    <div data-aos="fade-down" class="flex gap-2">
+                        <img class="rounded-xl w-20 h-20" src="./assets/musigma.svg" alt="MuSigma Inc Logo">
+                        <div class="flex flex-col">
+                            <p class="font-robotoserif font-bold text-xl">MuSigma Inc.</p>
+                            <div class="flex gap-2">
+                                <img src="./assets/maps_pin.svg" alt="Maps Pin">
+                                <span class="font-robotoserif text-lg italic font-light">Bangalore, India</span>
+                            </div>
+                            <p class="font-robotoserif font-semibold text-lg">Decision Scientist</p>
+                            <ul class="font-lisubosa text-gray-700 text-lg max-w-[28em]">
+                                <li>
+                                    - Delivered game-changing insights to BFSI and Travel clients through dashboards,
+                                    predictive models, and data storytelling
+                                </li>
+                                <li>
+                                    - Key wins: Built sentiment analysis models and forecasted booking rates, helping
+                                    clients unlock strategic opportunities
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="h-[4rem]"></div>
+                    <p class="font-robotoserif font-bold text-2xl mb-2 -mr-10">Jan 2024</p>
+                    <div class="h-[12.25rem]"></div>
+                    <div data-aos="fade-down" class="flex gap-2 -mr-10">
+                        <img class="rounded-xl w-20 h-20" src="./assets/utlogo.svg" alt="UTexas Logo">
+                        <div class="flex flex-col">
+                            <p class="font-robotoserif font-bold text-xl">The University of Texas</p>
+                            <div class="flex gap-2">
+                                <img src="./assets/maps_pin.svg" alt="Maps Pin">
+                                <span class="font-robotoserif text-lg italic font-light">Austin, United States</span>
+                            </div>
+                            <p class="font-robotoserif font-semibold text-lg">Master's in Business Analytics</p>
+                            <ul class="font-lisubosa text-gray-700 text-lg max-w-[28em]">
+                                <li>
+                                    - Pushing boundaries at UT Austin, honing advanced analytics and business strategy
+                                    skills to solve real-world challenges
+                                </li>
+                                <li>
+                                    - Bridging the gap between technical mastery and business impact to make data work
+                                    harder and smarter
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-col items-center">
+                    <p class="font-robotoserif font-bold text-2xl mb-4">Jun 2016</p>
+                    <img class="w-fit h-[50em]" src="./assets/curves.svg" alt="Career Curves SVG">
+                    <p class="font-robotoserif font-bold text-2xl mt-4">May 2024</p>
+
+                </div>
+                <div class="flex flex-col flex-1 items-start">
+                    <div data-aos="fade-down" class="flex gap-2">
+                        <img class="rounded-xl w-20 h-20" src="./assets/gitam.svg" alt="Gitam University Logo">
+                        <div class="flex flex-col">
+                            <p class="font-robotoserif font-bold text-xl">Gandhi Institute of Technology and Management
+                            </p>
+                            <div class="flex gap-2">
+                                <img src="./assets/maps_pin.svg" alt="Maps Pin">
+                                <span class="font-robotoserif text-lg italic font-light">Andhra Pradesh, India</span>
+                            </div>
+                            <p class="font-robotoserif font-semibold text-lg">Bachelor's in Computer Science &
+                                Engineering</p>
+
+                            <ul class="font-lisubosa text-gray-700 text-lg max-w-[28em]">
+                                <li>
+                                    - Laid the groundwork for a career in tech, mastering algorithms, data structures,
+                                    and the art of problem-solving
+                                </li>
+                                <li>
+                                    - Discovered a passion for transforming data into actionable solutions, sparking my
+                                    journey into analytics
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="h-[6.5rem]"></div>
+                    <p class="font-robotoserif font-bold text-2xl mb-2 -ml-10">Sep 2020</p>
+                    <div class="h-[12.45rem]"></div>
+
+                    <div data-aos="fade-down" class="flex gap-2">
+                        <img class="rounded-xl w-20 h-20" src="./assets/musigma.svg" alt="MuSigma Inc Logo">
+                        <div class="flex flex-col">
+                            <p class="font-robotoserif font-bold text-xl">MuSigma Inc.</p>
+                            <div class="flex gap-2">
+                                <img src="./assets/maps_pin.svg" alt="Maps Pin">
+                                <span class="font-robotoserif text-lg italic font-light">Bangalore, India</span>
+                            </div>
+                            <p class="font-robotoserif font-semibold text-lg">Apprentice Leader</p>
+
+                            <ul class="font-lisubosa text-gray-700 text-lg max-w-[28em]">
+                                <li>
+                                    - Led a high-performing team of five on a budget optimization project, driving
+                                    impactful results for a travel client
+                                </li>
+                                <li>
+                                    - Shaped account strategies and created RFPs that expanded our footprint in the
+                                    travel industry
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="flex flex-col p-8 items-center" id="testimonials">
+        <div class="container flex flex-col items-center">
+            <div class="flex flex-col items-center">
+                <p class="font-robotoslab text-[2rem] text-headings">Testimonials</p>
+                <p class="border-b border-b-gray-400 w-24 mt-2"></p>
+            </div>
+
+            <div class="mt-8 w-3/4 carouselwidget content-center h-[50vh]">
+                <script src="https://widget.senja.io/widget/54d82dd0-3c0a-4543-8fba-11977b3cb8e1/platform.js"
+                    type="text/javascript" async></script>
+                <div class="senja-embed" data-id="54d82dd0-3c0a-4543-8fba-11977b3cb8e1" data-mode="shadow"
+                    data-lazyload="false" style="display: block;"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="flex flex-col p-8 items-center" id="projects">
+        <div class="container flex flex-col items-center">
+            <div data-aos="fade-down" class="flex flex-col items-center">
+                <p class="font-robotoslab text-[2rem] text-headings">Projects</p>
+                <p class="border-b border-b-gray-400 w-24 mt-2"></p>
+                <!-- <p class="pt-2 font-lisubosa font-extralight italic text-gray-500">Sample Description</p> -->
+            </div>
+            <div data-aos="fade-right"
+                class="mt-6 flex gap-12 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[75%]">
+                <img src="./assets/skin.jpeg" class="w-[16em] h-[16em] rounded" alt="">
+                <div class="flex flex-col mb-auto">
+                    <p class="font-montserrat text-2xl">Skin Disease Detection</p>
+                    <p class="pt-6 font-robotoserif text-gray-700">We dived into deep neural architectures
+                        to tackle 7 prominent skin diseases. <br>
+                        This project aims to revolutionize dermatology, one pixel at a time!</p>
+                    <div class="flex gap-2 pt-[4rem]">
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">CNN</p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Transformers
+                        </p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Streamlit</p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Statistical
+                            Analysis
+                        </p>
+                    </div>
+                    <div class="flex pt-4 gap-2">
+                        <a href="https://github.com/ManasaMaganti/SkinDiseaseClassification" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/github.svg" alt="">
+                                View on Github</button>
+
+                        </a>
+                        <a href="https://skindiseaseclassification-aml-g18.streamlit.app/" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/streamlit-mark-color.svg" alt="">
+                                Demo on Streamlit</button>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right"
+                class="mt-10 flex gap-12 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[75%]">
+                <img src="./assets/beer.jpeg" class="w-[16em] h-[16em] rounded" alt="">
+                <div class="flex flex-col mb-auto">
+                    <p class="font-montserrat text-2xl">Beer Recommendation System</p>
+                    <p class="pt-6 font-robotoserif text-gray-700 ">We scraped beer reviews to understand
+                        preferences and suggest the best brews. <br> Think of it as a sommelier, but for beer lovers!
+                    </p>
+                    <div class="flex gap-2 pt-[4rem]">
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Web Scraping
+                        </p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Machine
+                            Learning</p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Python</p>
+                    </div>
+                    <div class="flex pt-4 gap-2">
+                        <a href="https://github.com/ManasaMaganti" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/github.svg" alt="">
+                                View on Github</button>
+
+                        </a>
+                        <a href="https://www.github.com" target="_blank">
+                            <!-- <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/streamlit-mark-color.svg" alt="">
+                                Demo on Streamlit</button> -->
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right"
+                class="mt-10 flex gap-12 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[75%]">
+                <img src="./assets/aromatic.jpeg" class="w-[16em] h-[16em] rounded" alt="">
+                <div class="flex flex-col mb-auto">
+                    <p class="font-montserrat text-2xl">Aromatic Analytics</p>
+                    <p class="pt-6 font-robotoserif text-gray-700 ">By analyzing perfumes, we unveiled what
+                        fragrances captivate people most. <br> It's a mix of science and artistry to understand scents!
+                    </p>
+                    <div class="flex gap-2 pt-[4rem]">
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Data Analytics
+                        </p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Visualization
+                        </p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Python</p>
+                    </div>
+                    <div class="flex pt-4 gap-2">
+                        <a href="https://github.com/ManasaMaganti" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/github.svg" alt="">
+                                View on Github</button>
+
+                        </a>
+                        <a href="https://www.github.com" target="_blank">
+<!--                             <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/streamlit-mark-color.svg" alt="">
+                                Demo on Streamlit</button> -->
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right"
+                class="mt-10 flex gap-12 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[75%]">
+                <img src="./assets/NASDAQ.jpeg" class="w-[16em] h-[16em] rounded" alt="">
+                <div class="flex flex-col mb-auto">
+                    <p class="font-montserrat text-2xl">Tracking NASDAQ Portfolio</p>
+                    <p class="pt-6 font-robotoserif text-gray-700">Using integer programming and
+                        optimization, we helped portfolios sync seamlessly with the NASDAQ index. <br>Investment made
+                        smarter!</p>
+                    <div class="flex gap-2 pt-[4rem]">
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">MIP
+                            Optimization</p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Financial
+                            Analytics
+                        </p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Python</p>
+                    </div>
+                    <div class="flex pt-4 gap-2">
+                        <a href="https://github.com/ManasaMaganti" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/github.svg" alt="">
+                                View on Github</button>
+
+                        </a>
+                        <a href="https://www.github.com" target="_blank">
+<!--                             <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/streamlit-mark-color.svg" alt="">
+                                Demo on Streamlit</button> -->
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right"
+                class="mt-10 flex gap-12 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[75%]">
+                <img src="./assets/license.jpeg" class="w-[16em] h-[16em] rounded" alt="">
+                <div class="flex flex-col mb-auto">
+                    <p class="font-montserrat text-2xl">License Plate Recognition</p>
+                    <p class="pt-6 font-robotoserif text-gray-700">This project empowered India's traffic
+                        systems by recognizing license plates. <br>Smarter roads, one vehicle at a time!</p>
+                    <div class="flex gap-2 pt-[4rem]">
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">OCR</p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Image
+                            Processing</p>
+                        <p class="font-roboto px-2 py-1 rounded-md bg-[#26B7FF] text-white text-sm h-fit">Python</p>
+                    </div>
+                    <div class="flex pt-4 gap-2">
+                        <a href="https://github.com/ManasaMaganti" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/github.svg" alt="">
+                                View on Github</button>
+                        </a>
+                        <a href="https://www.github.com" target="_blank">
+<!--                             <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/streamlit-mark-color.svg" alt="">
+                                Demo on Streamlit</button> -->
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col p-8 items-center" id="publications">
+        <div class="container flex flex-col items-center">
+            <div  data-aos="fade-down" class="flex flex-col items-center">
+                <p class="font-robotoslab text-[2rem] text-headings">Publications</p>
+                <p class="border-b border-b-gray-400 w-24 mt-2"></p>
+            </div>
+            <div class="flex gap-x-[5.75rem]"  data-aos="fade-down">
+                <div 
+                    class="mt-10 flex flex-col gap-4 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[20em]">
+                    <img src="./assets/document.svg" class="w-[12em] h-[12em] rounded" alt="">
+                    <div class="flex flex-col items-center">
+                        <p class="font-montserrat text-lg text-center">An intelligent application to track the driver
+                            drowsiness and generate smart alert based on eye tracking</p>
+                    </div>
+                    <div class="flex gap-2 mt-auto mb-2">
+                        <a href="https://drive.google.com/file/d/1UizsZic8qdwkR0J9m_iIqx2YIbqEwqBQ/view?usp=drive_link" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/googledocs.svg" alt="">
+                                View on Google Docs</button>
+
+                        </a>
+                    </div>
+                </div>
+                <div 
+                    class="mt-10 flex flex-col gap-4 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[20em]">
+                    <img src="./assets/app.svg" class="w-[12em] h-[12em] rounded" alt="">
+                    <div class="flex flex-col items-center">
+                        <p class="font-montserrat text-lg text-center">Drowsiness Detection using Eye Blink Frequency
+                            and Yawn count for Driver Alert</p>
+                        
+                    </div>
+                    <div class="flex gap-2 mt-auto mb-2">
+                        <a href="https://drive.google.com/file/d/1chkS0jMJPWGB7QPWVujqwi4njIuuzH_i/view?usp=drive_link" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/googledocs.svg" alt="">
+                                View on Google Docs</button>
+
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="mt-10 flex flex-col gap-4 items-center border border-gray-300 p-4 shadow-xl rounded-lg w-[20em]">
+                    <img src="./assets/document.svg" class="w-[12em] h-[12em] rounded" alt="">
+                    <div class="flex flex-col items-center">
+                        <p class="font-montserrat text-lg text-center">Encryption techniques in messenger applications
+                        </p>
+
+                    </div>
+                    <div class="flex gap-2 mt-auto mb-2">
+                        <a href="https://drive.google.com/file/d/1er5ySilQ8_6UVvFbwNqyiyPrZ1CrlqQd/view?usp=drive_link" target="_blank">
+                            <button
+                                class="text-gray-700 cursor-pointer flex gap-2 p-2 border border-gray-200 rounded-md">
+                                <img class="w-6 h-6" src="./assets/googledocs.svg" alt="">
+                                View on Google Docs</button>
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+    <section class="flex flex-col p-8 items-center" id="contact">
+        <div class="container flex flex-col items-center">
+            <div class="flex flex-col items-center">
+                <p class="font-robotoslab text-[2rem] text-headings">Contact</p>
+                <p class="border-b border-b-gray-400 w-24 mt-2"></p>
+
+            </div>
+            <div class="mt-8 text-center">
+                <p class="font-robotoserif text-lg text-gray-700">Email: manasamaganti16@gmail.com</p>
+                <p class="font-robotoserif text-lg text-gray-700 mt-2">Phone: +1(737)-336-5928</p>
+                <p class="font-robotoserif text-lg text-gray-700 mt-2">Austin, Texas</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3.7.1/tsparticles.all.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/configs@3.7.3/tsparticles.configs.min.js"></script>
+    <script>
+        var style = document.createElement('style');
+        style.innerHTML = "div>.sj-endorser-name{ font-weight: bold!important;}  .sj-content>div>div{ }";
+        document.querySelector(".carouselwidget > div").shadowRoot.appendChild(style);
+        let observer = new MutationObserver(function (mutations) {
+            let outer = document.querySelector("body > section:nth-child(3) > div > div.carouselwidget > div");
+            if (outer && outer.shadowRoot) {
+                document.querySelector("body > section:nth-child(3) > div > div.carouselwidget > div").shadowRoot.querySelector("div > div.mt-4 > div").style = "display: none;"
+                observer.disconnect();
+            }
+        });
+
+        observer.observe(document, { attributes: false, childList: true, characterData: false, subtree: true });
+    </script>
+    <script src="./assets/script.js" defer></script>
+</body>
+
+</html>
